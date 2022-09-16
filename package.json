@@ -1,0 +1,28 @@
+{
+  "name": "meetscheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lakshyabhasin509/MeetingSchedular.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lakshyabhasin509/MeetingSchedular/issues"
+  },
+  "homepage": "https://github.com/lakshyabhasin509/MeetingSchedular#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mogoose": "^0.0.1-security",
+    "mongoose": "^6.6.1"
+  }
+}
