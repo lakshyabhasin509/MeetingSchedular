@@ -7,7 +7,7 @@ require('dotenv').config()
 
 //////////// Importing Routes ///////////
 const authRoute=require('./routes/auth')
-
+const createTeamRoute=require('./routes/createTeam')
 
 
 app.use(express.json())
@@ -23,6 +23,8 @@ mongoose.connect(process.env.LOCAL_DB_CONNECT,
 
 // Routes
 app.use('/api/user',authRoute)
+app.use('/api/createTeam',createTeamRoute)
+
 
 app.get('/',(req,res)=>{
     res.send({status:'ok'})

@@ -21,6 +21,24 @@ const userSchema=new mongoose.Schema({
         max:1024,
         min:6
     },
+    teams:[
+        {
+            teamId:{
+                type:mongoose.ObjectId,
+                required:true,   
+            },
+            isAdmin:{
+                type:Boolean,
+                required:true,
+                default:false
+            },teamname:{
+                type:String,
+                required:true,
+                unique:true,               
+            }
+
+        }
+    ],
     date:{
         type:Date,
         default:Date.now
